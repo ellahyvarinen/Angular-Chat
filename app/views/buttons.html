@@ -1,0 +1,23 @@
+<div id="buttons" ng-show="false">
+  <form>
+    <input type="text" class="form-control" placeholder="Message ID" ng-model="message">
+    <button ng-click="getMessage()" class="btn btn-default">Get Message</button>
+  </form>
+  <br>
+
+  <div ng-controller="getMessagesCtrl">
+		<button ng-click="getMessages()" class="btn btn-default">Get Messages</button>
+  </div>
+  <br>
+
+  <form>
+    <input type="text" class="form-control" placeholder="User ID" ng-model="user">
+    <button ng-click="getUser()" class="btn btn-default">Get User</button>
+  </form>
+  <br>
+
+  <button ng-click="getUsers()" class="btn btn-default">Get Users</button>
+  <br>
+
+  <button ng-click=""></button>
+</div>

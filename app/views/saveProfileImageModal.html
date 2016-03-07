@@ -1,0 +1,32 @@
+<!--
+<img src="" id="profileImage">
+<h4>Save profile image</h4>
+<form id=imageForm>
+  <label for=name>Choose image</label>
+  <input type=file id=file name=file placeholder=File file-model="myFile">
+  <input type=hidden name=uID>
+  <input type=hidden name=name>
+  <button ng-click="saveImage()">Save</button>
+</form>
+-->
+
+ <div id="imageModal" class="modal fade" role="dialog" ng-controller="saveProfileImageCtrl">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Profile image</h4>
+        </div>
+        <div class="modal-body">
+          <form class="form-inline" id="imageForm">
+            <label for="name">Choose image</label>
+						<br>
+            <input type="file" class="form-control" id="imageFile" name="file" placeholder="Image file" ng-model="file">
+            <input type="hidden" name="uID" value="" ng-model="user">
+            <br><br>
+            <button ng-click="saveImage()" class="btn btn-default">Save</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>

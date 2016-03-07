@@ -1,0 +1,19 @@
+<div id="deleteModal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title">Delete Profile</h4>
+      </div>
+      <div class="modal-body">
+        <form id="deleteProfileForm">
+          <label>Are you sure you want to leave Cat Chat?</label>
+          <input type="hidden" name="uID" ng-model="user">
+          <br>
+          <br>
+          <button ng-click="deleteUser()" class="btn btn-default">Yes</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
